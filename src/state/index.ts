@@ -4,6 +4,7 @@ import multicall from 'lib/state/multicall'
 import { load, save } from 'redux-localstorage-simple'
 import { isTestEnv } from 'utils/env'
 
+import activity from './activity/reducer'
 import application from './application/reducer'
 import burn from './burn/reducer'
 import burnV3 from './burn/v3/reducer'
@@ -19,7 +20,7 @@ import transactions from './transactions/reducer'
 import user from './user/reducer'
 import wallets from './wallets/reducer'
 
-const PERSISTED_KEYS: string[] = ['user', 'transactions', 'lists']
+const PERSISTED_KEYS: string[] = ['user', 'transactions', 'lists', 'activities']
 
 const store = configureStore({
   reducer: {
@@ -29,6 +30,7 @@ const store = configureStore({
     transactions,
     wallets,
     swap,
+    activity,
     mint,
     mintV3,
     burn,

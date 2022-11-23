@@ -25,6 +25,7 @@ import Polling from '../components/Polling'
 import Popups from '../components/Popups'
 import { useIsExpertMode } from '../state/user/hooks'
 import DarkModeQueryParamReader from '../theme/components/DarkModeQueryParamReader'
+import Activity from './Activity'
 import AddLiquidity from './AddLiquidity'
 import { RedirectDuplicateTokenIds } from './AddLiquidity/redirects'
 import { RedirectDuplicateTokenIdsV2 } from './AddLiquidityV2/redirects'
@@ -210,6 +211,7 @@ export default function App() {
                   <Route path="send" element={<RedirectPathToSwapOnly />} />
                   <Route path="swap/:outputCurrency" element={<RedirectToSwap />} />
                   <Route path="swap" element={<Swap />} />
+                  <Route path="activity" element={<Activity />} />
 
                   <Route path="pool/v2/find" element={<PoolFinder />} />
                   <Route path="pool/v2" element={<PoolV2 />} />
