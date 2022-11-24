@@ -1,4 +1,4 @@
 # push-protocol-integration-into-uniswap-interface
-Get directly notified on Uniswap front-end when you interact with the dapp!
+Get directly notified on Uniswap front-end when you interact with the dapp!  [https://uniswap-push.web.app/#/activity](https://uniswap-push.web.app/#/activity)
 
-Channel link to opt-in to get notification staging.push.org/#/channels?channel=0xEc025780fa9430Ce759bAB7E865Faf5Fa8b2C6E2
+Channel [link](staging.push.org/#/channels?channel=0xEc025780fa9430Ce759bAB7E865Faf5Fa8b2C6E2) to opt-in to get notification.
