@@ -15,3 +15,8 @@ Here you can see all your activities and these all notifications are clickable. 
 
 ![screencapture-uniswap-push-web-app-2022-11-24-18_38_20](https://user-images.githubusercontent.com/42214791/203798108-cbc75ea1-c73f-443e-b0b7-aef07b46b7d7.png)
 
+
+### Technical part
+When you look into the redux state of uniswap, they are storing every transaction and it's metadata like hash, isConfirmed, info and/or transactionType: SWAP, APPROVE, ADD_LIQUIDITY etc. Every block has is checked that tx is confirmed or not. While changing state from pending to confirmed of specific tx, that is good time to notify the user from front-end and also you can trigger you node server or subgraph whatever. 
+I also triggering the user from the front-end and making payload of TX_TYPE. In the future you can make deatiled payload to the user, which will include complete information, how much TOKENS have been swapped - how much you've received. Which tokens you have given aproval, timestamp, all metadata.
+
