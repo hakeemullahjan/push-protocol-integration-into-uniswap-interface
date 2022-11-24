@@ -22,3 +22,7 @@ I also triggering the user from the front-end and making payload of TX_TYPE. In 
 
 
 ![code](https://user-images.githubusercontent.com/42214791/203808232-c098db03-c64a-48a4-a0ec-91b5782c4422.png)
+
+
+ [Send notification code link](https://github.com/hakeemullahjan/push-protocol-integration-into-uniswap-interface/blob/main/src/state/transactions/updater.tsx)
+
