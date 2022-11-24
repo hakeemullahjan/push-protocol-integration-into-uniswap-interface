@@ -36,6 +36,18 @@ const Activity = () => {
     })()
   }, [account, chainId])
 
+  useEffect(() => {
+    ;(async () => {
+      const channelData = await PushAPI.channels.getChannel({
+        channel: 'eip155:5:0xEc025780fa9430Ce759bAB7E865Faf5Fa8b2C6E2', // channel address in CAIP
+        env: 'staging',
+      })
+      console.log({
+        channelData,
+      })
+    })()
+  }, [])
+
   const optInChannel = useCallback(async () => {
     if (account && provider !== undefined) {
       const _signer = provider?.getSigner(account)
@@ -76,8 +88,12 @@ const Activity = () => {
 
   return (
     <div>
-      <button onClick={optInChannel}>Opt In</button>
-      <button onClick={optOutChannel}>Opt Out</button>
+      {account && (
+        <>
+          <button onClick={optInChannel}>Opt In</button>
+          <button onClick={optOutChannel}>Opt Out</button>
+        </>
+      )}
 
       {notifications.map((oneNotification, i) => {
         const { cta, title, message, app, icon, image, url, blockchain, secret, notification } = oneNotification
