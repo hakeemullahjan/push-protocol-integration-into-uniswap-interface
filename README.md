@@ -11,7 +11,7 @@ Here you'll get all the notifications and history like SWAP, ADD LIQUIDITY or AP
 
 ###### List of activities
 In this page you can gasless opt-in or opt-out to the channel.
-Here you can see all your activities and these all notifications are clickable. When you click on it, it will take you to the etherscan explorer.
+Here you can see all your activities and these all notifications are clickable. When you click on it, it will take you to the etherscan explorer and verify your transactions.
 
 ![screencapture-uniswap-push-web-app-2022-11-24-18_38_20](https://user-images.githubusercontent.com/42214791/203798108-cbc75ea1-c73f-443e-b0b7-aef07b46b7d7.png)
 
